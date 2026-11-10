@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamentos</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="agendamento.html">Agendamentos</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+    <h2>Agendamentos</h2>
+
+    <form id="formulario">
+        <input type="hidden" id="id">
+        <input type="date" id="data_agendamento" required>
+        <input id="servico" placeholder="Serviço" required>
+        <select id="id_veiculo" required></select>
+        <button>Salvar</button>
+        <button type="button" onclick="limparFormularioDeAgendamento()">Limpar</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Serviço</th>
+                <th>Cliente</th>
+            
+            
+            </tr>
+        </thead>
+        <tbody id="tabela"></tbody>
+    </table>
+
+    <script src="js/funcoes.js"></script>
+    <script src="js/agendamento.js"></script>
+</body>
+</html>

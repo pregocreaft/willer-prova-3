@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="agendamento.html">Agendamentos</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+    <h2>Clientes</h2>
+
+    <form id="formulario">
+        <input type="hidden" id="id">
+        <input id="nome" placeholder="Nome" required>
+        <input id="cpf" placeholder="CPF" required>
+        <input id="telefone" placeholder="Telefone" required>
+        <button type="submit">Salvar</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody id="tabela"></tbody>
+        </table>
+    </form>
+    
+    <script src="js/funcoes.js"></script>
+    <script src="js/cliente.js"></script>
+</body>
+</html>
